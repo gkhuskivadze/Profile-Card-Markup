@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  background-color: #19a1ae;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: left -11.2rem top -63.7rem,
+    right -13.399999999999999rem top 52.4rem;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 870px) {
+  .page {
+    background-position: top -43.7rem left -46.2rem, top 64.4rem right -39.4rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .page {
+    background-position: top -61.69999999999999rem left -64.2rem,
+      top 51.400000000000006rem right -59.4rem;
+  }
+}
+
+.card {
+  max-width: 35rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-cover {
+  position: relative;
+}
+
+.card-cover-img {
+  max-width: 100%;
+  display: flex;
+}
+
+.card-cover-avatar {
+  border-radius: 50%;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+}
+
+.name-age-section {
+  background-color: #fff;
+  min-height: 14.5rem;
+  text-align: center;
+  border-bottom: 1px solid #e8e9ec;
+}
+
+.name-age-section h1,
+.name-age-section h1 span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 22.32px;
+  color: #2e3349;
+}
+
+.name-age-section h1 span {
+  font-weight: 400;
+  color: #6b7082;
+  margin-left: 0.85rem;
+}
+
+.city span {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 17.36px;
+  color: #6b7082;
+  margin-top: 1.3rem;
+  padding-bottom: 28px;
+}
+
+.name-age {
+  padding-top: 72px;
+}
+
+.stats-section {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  padding: 2.4rem 0 2.4rem 0;
+}
+
+.stats-section .txt {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6b7082;
+  letter-spacing: 1.5px;
+  line-height: 12.4px;
+}
+
+.stats-section .num {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2e3349;
+  line-height: 22.32px;
+  margin-bottom: 9px;
+}
